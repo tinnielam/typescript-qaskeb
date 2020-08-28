@@ -1,0 +1,48 @@
+h1, h2 {
+  font-family: Lato;
+}
+
+canvas { 
+  height: 100vh; 
+  width: 100vw; 
+  display: block;
+}
+
+#TitleHeader {
+  animation: heartbeat 3s infinite;
+  color:black;
+  font-size: 2em;
+  text-align: center;
+  border: 1px solid #11b9ecec
+}
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( 1 )
+      rotate(1deg); 
+      zoom:0%;
+      color:blue;   
+  }
+  20%
+  {
+    transform: scale( 1.25 )
+      rotate(0deg);  
+      zoom:20%;
+  }
+   40%
+  {
+    transform: scale( 1.5 )
+      rotate(-1deg);
+      zoom:40%;
+      color:beige
+  }
+     60%
+  {
+    transform: scale( 1.5 )
+      rotate(1deg);
+      zoom:60%;
+      color:red
+  }
+}
